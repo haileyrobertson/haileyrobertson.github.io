@@ -1,9 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
-
 import Layout from "../components/layout";
 
-// create react component for page as standalone variable
 const indexPage = () => {
   return (
     <Layout>
@@ -21,6 +18,11 @@ const indexPage = () => {
         challenges related to spillover risk and outbreak detection,
         decision-making for emergency response, and data-sharing in global
         health.
+      </p>
+      <p>
+        <a href="/Robertson_CV_06042023.pdf" download>
+          Download my CV
+        </a>
       </p>
     </Layout>
   );

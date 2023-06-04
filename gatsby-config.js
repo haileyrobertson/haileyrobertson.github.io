@@ -1,3 +1,5 @@
+const { version } = require("pdfjs-dist/package.json");
+
 module.exports = {
   siteMetadata: {
     title: "Hailey Robertson",
@@ -15,4 +17,4 @@ module.exports = {
     },
     "gatsby-transformer-remark",
   ],
-}
+};
