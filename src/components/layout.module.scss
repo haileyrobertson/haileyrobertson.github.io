@@ -1,7 +1,7 @@
 /* layout.module.scss */
 .container {
   margin: 0 auto;
-  max-width: 1260px;
+  max-width: 1792px;
   padding: 1rem;
   color: #eeedeb;
   display: flex;
@@ -25,6 +25,6 @@
 }
 
 .text {
-  max-width: 750px;
+  max-width: 1000px;
   flex-grow: 1;
 }
