@@ -1,0 +1,1 @@
+(self.webpackChunkgatsby_starter_scientist=self.webpackChunkgatsby_starter_scientist||[]).push([[471],{1471:function(){}}]);
