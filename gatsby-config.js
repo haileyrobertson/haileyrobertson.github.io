@@ -2,7 +2,7 @@ module.exports = {
   // pathPrefix: '/gatsby-starter-scientist',
   siteMetadata: {
     author: "Hailey Robertson",
-    description: "Data Engineer and Research Analyst",
+    description: "Doctoral Student, Yale University",
     siteUrl: "https://haileyrobertson.com",
     title: "Hailey Robertson",
     // List of link buttons to include on the landing image. Delete this field
@@ -11,7 +11,7 @@ module.exports = {
     // primaryLinks: ["research", "opportunities", "publications"],
     // List of PubMed IDs to include on the publication page. Delete this field
     // and/or all entires if you do not want the publication page.
-    publications: [37500627, 35404134],
+    publications: [41370647,40544158, 41789152,  40051543, 39869635,  40041112,  38915813, 37500627, 35404134],
     // An array of links to display in the page footer. Include as many as you like
     // (not just the ones here). If either the link or text is missing,
     // it will not be shown. Delete this field and/or all entires to disable
@@ -20,15 +20,15 @@ module.exports = {
       { text: "GitHub", link: "https://github.com/haileyrobertson" },
       {
         text: "Google Scholar",
-        link: "https://scholar.google.com/citations?user=w9QBT5kAAAAJ&hl",
+        link: "https://scholar.google.com/citations?user=C2KykoMAAAAJ&hl",
       },
       {
         text: "LinkedIn",
         link: "https://www.linkedin.com/in/hailey-robertson",
       },
       {
-        text: "Twitter",
-        link: "https://www.twitter.com/haileydrob",
+        text: "Bluesky",
+        link: "https://bsky.app/profile/haileyrobertson.bsky.social",
       },
     ],
   },

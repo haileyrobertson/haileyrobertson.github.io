@@ -13,7 +13,7 @@ const Publications = ({ publications }) => (
     </section>
     <section>
       <header>
-        <h1>Publications in Review</h1>
+        <h1>Pre-prints</h1>
       </header>
       <ul>
         <li>
@@ -28,6 +28,14 @@ const Publications = ({ publications }) => (
             DOI: 10.1038/s41597-023-02398-3.
           </a>
         </li>
+        <li>
+          Catchen M, Banville F, Boutin AC, Brookson CB, Carlson CJ, 
+          Dansereau G, Gibb R, Houle M, Kaza B, <strong>Robertson H</strong>, 
+          Simons D, Seifert SN, Poisot T.{" "}<strong> A protocol for 
+          biodiversity-informed wildlife disease surveillance.
+          </strong> <em>EcoEvoRxiv</em>{" "}
+          <a href="https://doi.org/10.32942/X21D36">DOI: 10.32942/X21D36</a>
+        </li>
       </ul>
     </section>
     <section>
@@ -36,23 +44,7 @@ const Publications = ({ publications }) => (
       </header>
       <ul>
         <li>
-          <strong>Robertson H</strong>, Graeden E, Castellanos A, Rosado D,
-          Drake J, and Han B. Understanding Ecological Systems Using Knowledge
-          Graphs.
-        </li>
-        <li>
-          <strong>Robertson H</strong>, Graeden E, Kerr J, Van Maele M, and Katz
-          R. Follow the Money: A Global Analysis of Funding Dynamics for Global
-          Health Security.
-        </li>
-        <li>
-          Epureanu B, Han B, Graeden E, Bahl J, Rohani P, Cacciatore M, Ghadami
-          A, Nowak G, Marty E, <strong>Robertson H</strong>, Sarkar S, Faizullah
-          S, Stott G, King J, and Drake J. Using system-of-systems to advance
-          pandemic intelligence for preparedness and response.
-        </li>
-        <li>
-          Far N, <strong>Robertson H</strong>, and Zvobgo K. Confronting Truth:
+          Far N, <strong>Robertson H</strong>, Rudling A, and Zvobgo K. Confronting Truth:
           A Theory of Transitional Justice in Established Democracies.
         </li>
       </ul>
@@ -80,6 +72,17 @@ const Publications = ({ publications }) => (
       <header>
         <h1>Public Scholarship</h1>
       </header>
+        <header>
+        <h2>2025</h2>
+      </header>
+      <ul>
+        <li>
+          <a href="https://www.cjonline.com/story/opinion/columns/2025/06/28/topekan-nsf-funds-crucial-to-infectious-disease-forecasting-opinion/84325732007/">
+            "Topeka scientist says NSF funds critical to infectious disease forecasting"
+          </a>{" "}
+          <em>Topeka Capital-Journal.</em> 28 June 2025.
+        </li>
+        </ul>
       <header>
         <h2>2021</h2>
       </header>
