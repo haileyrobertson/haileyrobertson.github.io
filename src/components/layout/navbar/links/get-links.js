@@ -4,16 +4,31 @@ import Link from "../../../link/link"
 
 const getLinks = links => {
   const linkComponents = {
-    publications: (
-      <Link key="publications" to="/publications">
-        Publications
+    research: (
+      <Link key="research" to="/research">
+        research
       </Link>
     ),
     cv: (
       <Link key="cv" to="/cv">
-        CV
+        cv
       </Link>
     ),
+    media: (
+      <Link key = "media" to="/media">
+        media
+      </Link>
+    ),
+    about: (
+      <Link key = "about" to="/about">
+        about
+      </Link>
+    ),
+    home: (
+      <Link key = "home" to ="/">
+        home
+      </Link>
+    )
   }
 
   return <>{links.map(link => linkComponents[link])}</>

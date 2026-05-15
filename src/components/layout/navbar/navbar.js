@@ -17,21 +17,28 @@ const Navbar = forwardRef(
 
     return (
       <div className="nav">
-        <Icon location={location} />
+        {/* Wrap logo/name in a specific class for Fahkwang */}
+        <div className="nav__logo-container">
+          <Icon location={location} />
+        </div>
+
         <div className="nav__menu" style={{ transform }}>
           <ButtonIcon
             ariaLabel="navigation menu"
-            icon={faBars}
+            icon={ faBars }
             kind="primary"
             onClick={handleClick}
             type="button"
           />
           <div className="nav__menu-links" ref={ref}>
-            <Link to="/">Hailey Robertson</Link>
+            <div className="nav__logo-container">
+              <Link to="/">Hailey Robertson</Link>
+            </div>
             {navLinks}
             <Theme />
           </div>
         </div>
+
         <div className="nav__right">
           {navLinks}
           <Theme />

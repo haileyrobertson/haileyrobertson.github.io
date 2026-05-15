@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 
-const getPublications = require('./scripts/publications/index');
+// const getPublications = require('./scripts/publications/index');
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;

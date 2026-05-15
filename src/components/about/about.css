@@ -1,0 +1,17 @@
+.about__inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__inner > section {
+  max-width: 960px;
+  padding: 2rem 0 2rem 0;
+  width: 100%;
+}
+
+.about__layout {
+  display: flex;
+  padding-bottom: 2rem;
+  width: 100%;
+}

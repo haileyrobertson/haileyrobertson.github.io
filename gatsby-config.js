@@ -11,25 +11,18 @@ module.exports = {
     // primaryLinks: ["research", "opportunities", "publications"],
     // List of PubMed IDs to include on the publication page. Delete this field
     // and/or all entires if you do not want the publication page.
-    publications: [41370647,40544158, 41789152,  40051543, 39869635,  40041112,  38915813, 37500627, 35404134],
+    // publications: [41370647,40544158, 41789152,  40051543, 39869635,  40041112,  38915813, 37500627, 35404134],
     // An array of links to display in the page footer. Include as many as you like
     // (not just the ones here). If either the link or text is missing,
     // it will not be shown. Delete this field and/or all entires to disable
     // footer links.
     footerLinks: [
+      { text: "Email", link: "mailto:hailey.robertson@yale.edu" },
       { text: "GitHub", link: "https://github.com/haileyrobertson" },
-      {
-        text: "Google Scholar",
-        link: "https://scholar.google.com/citations?user=C2KykoMAAAAJ&hl",
-      },
-      {
-        text: "LinkedIn",
-        link: "https://www.linkedin.com/in/hailey-robertson",
-      },
-      {
-        text: "Bluesky",
-        link: "https://bsky.app/profile/haileyrobertson.bsky.social",
-      },
+      { text: "Google Scholar", link: "https://scholar.google.com/citations?user=C2KykoMAAAAJ&hl" },
+      { text: "ORCID", link: "https://orcid.org/0009-0007-2988-307X" },
+      { text: "LinkedIn", link: "https://www.linkedin.com/in/hailey-robertson" },
+      { text: "Bluesky", link: "https://bsky.app/profile/haileyrobertson.bsky.social" },
     ],
   },
   plugins: [

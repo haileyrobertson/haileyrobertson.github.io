@@ -2,11 +2,67 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-size: 0.95rem;
 }
+
+/* ROW: year + content */
+.pub__row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  column-gap: 1.5rem;
+  position: relative;
+  margin: 0.75rem 0 1.5rem;
+}
+
+/* YEAR GUTTER */
+.pub__year {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: right;
+  color: var(--color-font);
+  padding-top: 0.5rem;
+}
+
+/* VERTICAL LINE */
+.pub__row::before {
+  content: "";
+  position: absolute;
+  left: 90px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--color-primary);
+}
+
+/* LIST RESET */
+.pub__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ITEM SPACING */
+.pub__list > li {
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.publications h1 {
+  font-size: 1.5rem;
+}
+
+.publications h2 {
+  font-size: 1.1rem;
+}
+
+.publications ul > li {
+  line-height: 1.6;
+}
+
 .publications header {
   align-items: center;
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .publications header h1 {
   margin-bottom: 0;
@@ -16,7 +72,7 @@
   margin-left: 1rem;
 }
 .publications section {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   max-width: 960px;
   width: calc(100vw - 3rem);
 }
@@ -24,15 +80,10 @@
 .publications ul {
   list-style: none;
   padding-left: 0;
+  margin: 0.25rem;
 }
 .publications ul > li {
   line-height: 2rem;
-}
-.publications ul:not(:last-of-type) {
-  margin-bottom: 2rem;
-}
-.publications ul > li:not(:last-of-type) {
-  margin-bottom: 1rem;
 }
 
 .publications__links > a:not(:last-of-type) {
@@ -50,4 +101,33 @@
 
 .underline {
   text-decoration: underline;
+}
+
+.publications__note {
+  max-width: 960px;
+  width: calc(100vw - 3rem);
+  margin: 0.5rem 0 1rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.access-note {
+  max-width: 700px;
+  margin: 0.5rem 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-font);
+  opacity: 0.85;
+}
+
+.access-note summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.access-note p {
+  margin: 0.25rem 0 0;
+  line-height: 1;
 }

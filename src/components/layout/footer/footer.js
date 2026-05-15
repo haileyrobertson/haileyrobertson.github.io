@@ -10,6 +10,7 @@ const Footer = ({
   links,
 }) => (
   <footer className="footer">
+    
     {
       links.length > 0
       && <Links links={links} />

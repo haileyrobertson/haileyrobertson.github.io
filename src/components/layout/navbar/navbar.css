@@ -2,16 +2,40 @@
   align-items: center;
   box-sizing: border-box;
   display: flex;
-  font-family: var(--font-title);
-  font-weight: bold;
-  height: 60px;
-  padding: 0 10px;
-  text-transform: uppercase;
+  height: 80px; 
+  padding: 0 2rem;
   top: 0;
   width: 100%;
   z-index: 100;
 }
 
+/* NAME LOGO TOP LEFT */
+.nav__logo-container,
+.nav__logo-container a {
+  font-family: var(--font-title) !important; 
+  font-style: italic !important;
+  font-weight: 600 !important;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--color-font);
+  letter-spacing: -0.02em;
+  text-transform: none; 
+}
+
+/*  MENU LINKS */
+.nav__right a,
+.nav__menu-links a:not(.nav__logo-container a) {
+  font-family: var(--font-secondary) !important; 
+  font-weight: 300; 
+  font-style: normal;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/*  FUNCTIONAL NAV  */
 .nav__menu {
   display: none;
   position: fixed;
@@ -19,13 +43,16 @@
   top: 8px;
   transition: transform 0.3s var(--timing-function);
 }
+
 .nav__menu a {
   align-items: center;
   display: flex;
 }
+
 .nav__menu a svg {
   margin-right: 0.5rem;
 }
+
 .nav__menu button {
   left: -10px;
   position: relative;
@@ -40,7 +67,7 @@
   display: flex;
   flex-direction: column;
   height: calc(100vh - 16px);
-  padding: 0.6rem;
+  padding: 1.5rem;
 }
 
 .nav__right {
@@ -54,44 +81,31 @@
   color: var(--color-font);
 }
 
-.nav__menu a,
-.nav__right a {
-  font-family: var(--font-secondary);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+/* LINK COLORS  */
 .nav__menu a:link,
 .nav__menu a:visited,
 .nav__right a:link,
 .nav__right a:visited {
   color: var(--color-font);
 }
+
 .nav__menu a:focus,
 .nav__menu a:hover,
 .nav__right a:focus,
 .nav__right a:hover {
   color: var(--color-primary);
 }
-.nav__menu a:link svg,
-.nav__menu a:visited svg,
-.nav__right a:link svg,
-.nav__right a:visited svg {
-  color: var(--color-primary);
-}
 
 .nav__menu-links a {
-  margin: 0.3rem 0;
-}
-.nav__menu-links button {
-  margin-left: auto;
-  margin-top: 1rem;
+  margin: 0.5rem 0;
 }
 
 .nav__right * {
-  margin: 0 0.6rem;
+  margin: 0 0.8rem;
 }
+
 .nav__right button {
-  margin-left: 1.2rem;
+  margin-left: 1.5rem;
 }
 
 @media (max-width: 799px) {

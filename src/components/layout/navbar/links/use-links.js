@@ -16,7 +16,7 @@ const useLinks = () => {
   const links = []
 
   if (query.publications) {
-    links.push("publications"), links.push("cv")
+   links.push("home"), links.push("about"), links.push("cv"), links.push("research"), links.push("media")
   }
 
   return links

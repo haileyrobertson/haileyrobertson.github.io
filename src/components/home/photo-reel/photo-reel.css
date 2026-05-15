@@ -1,0 +1,109 @@
+/* src/components/home/photo-reel/photo-reel.css */
+
+.reel-wrapper {
+  /* Forces the reel to span the full width of the screen, breaking out of site margins */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  background-color: var(--color-background);
+  /* Creates a soft fade on the edges for a high-end gallery look */
+  mask-image: linear-gradient(
+    to right, 
+    transparent, 
+    black 15%, 
+    black 85%, 
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right, 
+    transparent, 
+    black 15%, 
+    black 85%, 
+    transparent
+  );
+}
+
+.photo-reel-ticker {
+  display: flex;
+  /* (6 images * 2 for the loop) * 33.33vw = 400vw total width */
+  width: 400vw; 
+  
+  /* Total time for 6 images. 48s = 8 seconds per image (hold + slide) */
+  animation: smoothSnapLoop 48s ease-in-out infinite;
+}
+
+.reel-slide {
+  /* Exactly 1/3 of the screen width */
+  flex: 0 0 33.33vw; 
+  height: 500px;
+}
+
+.reel-image {
+  width: 98%;
+  height: 100%;
+  object-fit: cover;
+  /* Archival aesthetic: slightly dimmed and desaturated by default */
+  opacity: 0.7;
+  filter: grayscale(15%);
+  transition: all 0.6s var(--timing-function);
+}
+
+/* When focused (hovered), the image becomes clear and vivid */
+.reel-slide:hover .reel-image {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* SMOOTH SNAP LOGIC:
+   We divide 100% of the time into 3 "stops".
+   Each stop has a 'still' period and a 'sliding' period.
+*/
+@keyframes smoothSnapLoop {
+  /* IMAGE 1: Hold, then slide to 2 */
+  0%, 13% { transform: translateX(0); }
+  16.66%  { transform: translateX(-33.33vw); }
+
+  /* IMAGE 2: Hold, then slide to 3 */
+  16.66%, 29.66% { transform: translateX(-33.33vw); }
+  33.33%         { transform: translateX(-66.66vw); }
+
+  /* IMAGE 3: Hold, then slide to 4 */
+  33.33%, 46.33% { transform: translateX(-66.66vw); }
+  50%            { transform: translateX(-100vw); }
+
+  /* IMAGE 4: Hold, then slide to 5 */
+  50%, 63% { transform: translateX(-100vw); }
+  66.66%   { transform: translateX(-133.33vw); }
+
+  /* IMAGE 5: Hold, then slide to 6 */
+  66.66%, 79.66% { transform: translateX(-133.33vw); }
+  83.33%         { transform: translateX(-166.66vw); }
+
+  /* IMAGE 6: Hold, then slide to the start of the duplicate set */
+  83.33%, 96.66% { transform: translateX(-166.66vw); }
+  
+  /* 100%: Jump to the start of the loop (Invisible reset) */
+  100% { transform: translateX(-200vw); }
+}
+
+/* Mobile Adjustment: Make images take up more room on small screens */
+@media only screen and (max-width: 768px) {
+  .photo-reel-ticker {
+    width: calc(80vw * 6);
+  }
+  .reel-slide {
+    flex: 0 0 80vw;
+  }
+  @keyframes smoothSnapLoop {
+    0%, 28% { transform: translateX(0); }
+    33.33% { transform: translateX(-80vw); }
+    33.33%, 61% { transform: translateX(-80vw); }
+    66.66% { transform: translateX(-160vw); }
+    66.66%, 95% { transform: translateX(-160vw); }
+    100% { transform: translateX(-240vw); }
+  }
+}
